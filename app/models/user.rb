@@ -13,7 +13,7 @@ class User < ApplicationRecord
       validates :first_name
     end
     
-    with_options format: { jwith: /\A[ァ-ン]+\z/, message: '全角文字(カタカナ)を使用してください'} do
+    with_options format: { with: /\A[ァ-ン]+\z/, message: '全角文字(カタカナ)を使用してください'} do
       validates :last_name_kana
       validates :first_name_kana
     end
