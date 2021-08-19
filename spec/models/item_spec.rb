@@ -7,7 +7,7 @@ RSpec.describe Item, type: :model do
 
   describe '商品出品' do
     context '商品が出品できる時' do
-      it '全ての項目を正しく記入すれば出品できる' do
+      it 'すべての値が正しく入力されていれば出品できること' do
         expect(@item).to be_valid
       end
       it '販売価格が300円〜9,999,999円で半角数字であれば出品できる' do
